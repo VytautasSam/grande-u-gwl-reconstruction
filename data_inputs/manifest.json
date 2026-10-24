@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "sources": {
+    "monthly_wells": {
+      "file": "monthly_wells.csv",
+      "provided": "GWTS_with_climate_GRACE_expanded.csv",
+      "url": "https://drive.google.com/file/d/1hGvpwOjsTCA3RHDdohkN4wpaXlI6QIGQ/view?usp=drive_link",
+      "origin": "1_data_processing_and_validation notebook, cell 3",
+      "description": "Harmonized well-month measurements and climate predictors. Original monitoring and ERA5-Land processing occurred upstream.",
+      "bytes": 14708089,
+      "sha256": "116153a17b115a166c68b385263aa73e8c28c6ee6c014d3c26e748ff930982a3",
+      "storage": "gzip_parts",
+      "parts": [
+        {
+          "file": "packed/monthly_wells.csv.gz.part000",
+          "bytes": 768000,
+          "sha256": "108c7222fadda1e8d58b078a02c4e57a06163299d2529aa3fbf8bcd9f3b23096"
+        },
+        {
+          "file": "packed/monthly_wells.csv.gz.part001",
+          "bytes": 768000,
+          "sha256": "0a9d193d4b4269ef55ebecd043fbb634c9fcd182861539c4e85ba403cb24a032"
+        },
+        {
+          "file": "packed/monthly_wells.csv.gz.part002",
+          "bytes": 768000,
+          "sha256": "129adbb545d48d6da5dec0df29ec1b9373d238ad203ff2abae86aacb6a23c8e8"
+        },
+        {
+          "file": "packed/monthly_wells.csv.gz.part003",
+          "bytes": 768000,
+          "sha256": "87d173e549125c551d962158835eec60e687fd65cdff58d080fe4776089f3c8d"
+        },
+        {
+          "file": "packed/monthly_wells.csv.gz.part004",
+          "bytes": 768000,
+          "sha256": "1dc2f732b05fb2f74a7fe4df55e3c2b4249739f29c0b6457b1a6646092317a21"
+        },
+        {
+          "file": "packed/monthly_wells.csv.gz.part005",
+          "bytes": 768000,
+          "sha256": "7fdc84f480b7fb8a2c7c5eacecfb2faf0fe316f6d03af3ccd74b8b9f09de930d"
+        },
+        {
+          "file": "packed/monthly_wells.csv.gz.part006",
+          "bytes": 516087,
+          "sha256": "298babbc3e4b50a4c7f68e62da8df32c0c51209fe42940494d053b4898046d50"
+        }
+      ]
+    },
+    "static_wells": {
+      "file": "static_wells.xlsx",
+      "provided": "well_static.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1HtP20Kzj6cMaFUL46Kq8jB7pQ-VKzRx9/edit",
+      "origin": "1_data_processing_and_validation notebook, cell 5",
+      "description": "Harmonized monitoring-well metadata and quasi-static hydrogeological attributes.",
+      "bytes": 36840,
+      "sha256": "9585262aebb0c5882133b88cfec1fc5d12a898a7d29e837161099aefaf561772",
+      "github_raw_url": "https://raw.githubusercontent.com/VytautasSam/grande-u-gwl-reconstruction/main/data_inputs/static_wells.xlsx",
+      "storage": "direct"
+    },
+    "processed_grace": {
+      "file": "processed_grace.parquet",
+      "provided": "grace_imputed_data.parquet",
+      "url": "https://drive.google.com/file/d/1y0imJalS9fuwDZtdEweSHBa0ZWFXgCn2/view?usp=drive_link",
+      "origin": "1_data_processing_and_validation notebook, cell 11",
+      "description": "Processed and already infilled GRACE/GRACE-FO TWS polygons; upstream GRACE processing not included.",
+      "bytes": 6016351,
+      "sha256": "499699ce5e837a048ff83da0f9d26138f394afad9b68cc84f744f968eb3cb33e",
+      "storage": "gzip_parts",
+      "parts": [
+        {
+          "file": "packed/processed_grace.parquet.gz.part000",
+          "bytes": 768000,
+          "sha256": "60a5581a4b84ed587032224ec1d0be82b8ffad1907f7ad6afdc687534e3eae06"
+        },
+        {
+          "file": "packed/processed_grace.parquet.gz.part001",
+          "bytes": 768000,
+          "sha256": "da84746c29db162151ccfb6c7b5f5e30ff7b578472a9ba7eb0c2baecf6dc39d5"
+        },
+        {
+          "file": "packed/processed_grace.parquet.gz.part002",
+          "bytes": 768000,
+          "sha256": "4467a02eb7c4f17af9d47ada977940eb43493ad8765cd0046ef200a677b303d1"
+        },
+        {
+          "file": "packed/processed_grace.parquet.gz.part003",
+          "bytes": 493013,
+          "sha256": "0dd3bce42722e0d23e81ef968966afd9e4028266434de76b39d2ab1ce981e259"
+        }
+      ]
+    },
+    "world_boundaries": {
+      "file": "world_boundaries.geojson",
+      "provided": "world_countries(1).geojson",
+      "url": "https://drive.google.com/file/d/13h_dMZ46UwB4Q1Eyh9fYYS2xhJHUn-P_/view",
+      "origin": "2_statistics_analytics_maps notebook, cell 15",
+      "description": "Country boundaries used for the world and regional maps (Figure 1).",
+      "bytes": 24261278,
+      "sha256": "764f259082c141debd112178117f2a76fe40c585415b1edd1466a43d20d15fea",
+      "storage": "gzip_parts",
+      "parts": [
+        {
+          "file": "packed/world_boundaries.geojson.gz.part000",
+          "bytes": 768000,
+          "sha256": "df8826c353ec64a5fd547919251da81fe74ab4da99f7628a5ee8c9ab3c39ab62"
+        },
+        {
+          "file": "packed/world_boundaries.geojson.gz.part001",
+          "bytes": 768000,
+          "sha256": "11fa981cd0161af2d0b1a2bbe2ded93930eae5bd0f668a713acd932c90da5d21"
+        },
+        {
+          "file": "packed/world_boundaries.geojson.gz.part002",
+          "bytes": 768000,
+          "sha256": "0857ca51e3e9f09a2aa72c62677ff9523e8d381c8b98319a5e0db5128b5718b9"
+        },
+        {
+          "file": "packed/world_boundaries.geojson.gz.part003",
+          "bytes": 768000,
+          "sha256": "036909abf688d2f9a0f2bf9b7f247d06ca2683faee6c04b3c3a2a7d091ed0566"
+        },
+        {
+          "file": "packed/world_boundaries.geojson.gz.part004",
+          "bytes": 768000,
+          "sha256": "ad7484d3eaabe711df550eb5a0ca2235f731cf9c0ccc6b41b501c67bcab08df0"
+        },
+        {
+          "file": "packed/world_boundaries.geojson.gz.part005",
+          "bytes": 768000,
+          "sha256": "05cdc583f550e393c31e5f05c124381a89e5a8e2a27ee986d02ee5fe53ac7462"
+        },
+        {
+          "file": "packed/world_boundaries.geojson.gz.part006",
+          "bytes": 768000,
+          "sha256": "6e134e012e9eccaa3bcd49002bd137a3c5aedaa5a7a83929b31ce71c1984c3bc"
+        },
+        {
+          "file": "packed/world_boundaries.geojson.gz.part007",
+          "bytes": 768000,
+          "sha256": "572f31e77c63053b72aa76fe98ecf6715aad1c72bf1e96f91daf9d47fbfb65ae"
+        },
+        {
+          "file": "packed/world_boundaries.geojson.gz.part008",
+          "bytes": 768000,
+          "sha256": "72365ffde116b936001134f0c388b0599262b3012b35ef6d1572bc558827a03d"
+        },
+        {
+          "file": "packed/world_boundaries.geojson.gz.part009",
+          "bytes": 605279,
+          "sha256": "6112b7c7debf7f23e6d9b720618dc7bbae91d8e8d163c25e4393be521bd31139"
+        }
+      ]
+    }
+  },
+  "provenance_note": "Inputs supplied by manuscript authors; these are integrated/reconstructed source products, not raw national well records or unprocessed satellite products.",
+  "storage_note": "Large originals are stored as losslessly gzip-compressed, individually SHA-256 verified chunks (<750 KiB). The notebook reassembles exact byte-identical input files automatically. The original SHA-256 hashes remain unchanged."
+}
